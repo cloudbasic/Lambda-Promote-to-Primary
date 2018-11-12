@@ -1,0 +1,36 @@
+{
+  "accessKeyId": "YOU_ACCESS_KEY_ID_FROM_CLOUDBASIC_USER_MANAGEMENT",
+  "secretAccessKey": "YOU_SECRET_ACCESS_KEY_FROM_CLOUDBASIC_USER_MANAGEMENT",
+  "xml": true,
+  "https": true,
+  "addOptions": {
+    "httpPort": "82",
+    "httpsPort": "4432",
+    "basePath": "/api/"
+  },
+  "options": {
+    "host": "THE.IP.OF.YOUR.CLOUDBASIC.SERVER",
+    "port": "4432",
+    "method": "GET",
+    "service": "cloudbasic",
+    "rejectUnauthorized": false,
+    "headers": {
+      "X-Amz-Content-Sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "Content-Type": "application/xml"
+    },
+    "timeout": 120
+  },
+  "promoteDbReplicaToPrimaryStatus": {
+    "PromoteDbReplicaToPrimaryStatus": {
+      "ReplicationId": ""
+    }
+  },
+  "promoteDbReplicaToPrimary": {
+    "PromoteDbReplicaToPrimary": {
+      "ReplicationId": "",
+      "IgnoreInaccessibleSourceConnection": "true",
+      "IgnoreDbDiscrepancies": "true",
+      "CancelRunningCtProcess": "true"
+    }
+  }
+}
